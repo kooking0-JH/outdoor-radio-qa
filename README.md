@@ -1,4 +1,4 @@
-# outdoor-on-the-air
+# outdoor-radio-qa
 
 야외 무선 활동 실전 Q&A 시리즈 (POTA · SOTA · WWFF · IOTA · ARDF) — GitHub Pages 게시용
 
