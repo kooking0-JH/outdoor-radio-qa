@@ -32,6 +32,24 @@ html, body { margin: 0; padding: 0; background: #ffffff; }
 .qa.theme-ardf { --accent-dark:#7c2d12; --accent:#ea580c; --accent-badge:#c2410c; --accent-soft:#fff7ed; --accent-line:#fed7aa; --accent-ink:#ffedd5; }
 .qa.theme-hub  { --accent-dark:#1e293b; --accent:#475569; --accent-badge:#334155; --accent-soft:#f8fafc; --accent-line:#cbd5e1; --accent-ink:#e2e8f0; }
 
+/* 0. 시리즈 메뉴 (모든 편 공통) */
+.qa-nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px 0; }
+.qa-nav-btn {
+  display: inline-flex; align-items: center;
+  padding: 8px 14px; border-radius: 8px;
+  background: #ffffff; color: #0f172a;
+  border: 1.5px solid #94a3b8; box-shadow: 0 2px 0 #cbd5e1;
+  font-size: 14px; font-weight: 700; text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+.qa-nav-btn:hover { background: #f1f5f9; border-color: #475569; }
+.qa-nav-btn:active { transform: translateY(1px); box-shadow: none; }
+.qa-nav-btn.is-current {
+  background: var(--accent-badge); color: #ffffff; border-color: var(--accent-badge);
+  box-shadow: none; cursor: default;
+}
+.qa-nav-btn.is-current::before { content: '● '; font-size: 10px; margin-right: 4px; }
+
 /* 1. 헤더 */
 .qa-header {
   background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
@@ -305,6 +323,7 @@ html, body { margin: 0; padding: 0; background: #ffffff; }
 /* 모바일 */
 @media (max-width: 640px) {
   .qa-header { padding: 24px 20px; margin-bottom: 24px; }
+  .qa-nav-btn { padding: 7px 11px; font-size: 13px; }
   .qa-header h1 { font-size: 21px; }
   .qa-intro { padding: 20px; margin-bottom: 28px; }
   .qa-cat { font-size: 17px; padding: 12px 16px; margin: 28px 0 14px; }

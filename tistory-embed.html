@@ -1,14 +1,26 @@
 <!-- ==============================================================
      티스토리 HTML 모드에 붙여 넣는 코드 (글 하나에 페이지 하나)
-     src 와 title 만 바꿔서 사용:
-       pota.html / sota.html / wwff.html / iota.html / ardf.html / index.html
+     글 하나로 전체 시리즈를 보여 줄 때는 index.html 그대로 사용 (상단 메뉴로 5편 이동)
+     특정 편만 보여 줄 때는 src · href · title 세 곳을 바꿔서 사용:
+       index.html (허브) / pota.html / sota.html / wwff.html / iota.html / ardf.html
      ============================================================== -->
 <iframe id="ota-frame"
-  src="https://kooking0-jh.github.io/outdoor-on-the-air/pota.html"
-  title="POTA 실전 운용 Q&A"
+  src="https://kooking0-jh.github.io/outdoor-radio-qa/index.html"
+  title="야외 무선 활동 실전 Q&A"
   style="width:100%; height:2000px; border:0; display:block; overflow:hidden;"
   scrolling="no" loading="lazy"></iframe>
+<p style="text-align:right; font-size:13px; margin:6px 0 0;">
+  <a href="https://kooking0-jh.github.io/outdoor-radio-qa/index.html" target="_blank" rel="noopener">새 창에서 크게 보기 →</a>
+</p>
 <script>
+  (function () {
+    var f = document.getElementById('ota-frame'), first = true;
+    /* 메뉴로 다른 편을 열면, 글 아래쪽을 보고 있어도 새 페이지 맨 위로 이동 */
+    f.addEventListener('load', function () {
+      if (first) { first = false; return; }
+      if (f.getBoundingClientRect().top < 0) f.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
   window.addEventListener('message', function (e) {
     if (e.origin !== 'https://kooking0-jh.github.io') return;
     var f = document.getElementById('ota-frame');
