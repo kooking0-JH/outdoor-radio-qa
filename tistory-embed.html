@@ -1,0 +1,19 @@
+<!-- ==============================================================
+     티스토리 HTML 모드에 붙여 넣는 코드 (글 하나에 페이지 하나)
+     src 와 title 만 바꿔서 사용:
+       pota.html / sota.html / wwff.html / iota.html / ardf.html / index.html
+     ============================================================== -->
+<iframe id="ota-frame"
+  src="https://kooking0-jh.github.io/outdoor-on-the-air/pota.html"
+  title="POTA 실전 운용 Q&A"
+  style="width:100%; height:2000px; border:0; display:block; overflow:hidden;"
+  scrolling="no" loading="lazy"></iframe>
+<script>
+  window.addEventListener('message', function (e) {
+    if (e.origin !== 'https://kooking0-jh.github.io') return;
+    var f = document.getElementById('ota-frame');
+    if (f && e.source === f.contentWindow && e.data && e.data.type === 'otaHeight') {
+      f.style.height = e.data.h + 'px';
+    }
+  });
+</script>

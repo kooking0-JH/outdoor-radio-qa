@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOTA (Summits on the Air) 실전 운용 Q&amp;A</title>
+<meta name="description" content="SOTA 활성화 구역, 포인트 산정, 체이서 로그 제출 등 17가지 운용 규정 Q&amp;A">
+<link rel="stylesheet" href="assets/qa.css">
+</head>
+<body>
+<main class="qa theme-sota">
+
+<header class="qa-header">
+  <h1>SOTA (Summits on the Air) 실전 운용 Q&amp;A</h1>
+  <p>현장 운용 구역, 포인트 산정 기준, 체이서의 개별 로그 제출 등 SOTA 운용 중 숙지해야 할 필수 규정을 질의응답(FAQ) 형태로 정리했습니다.</p>
+</header>
+
+<section class="qa-intro">
+  <h2>SOTA(Summits on the Air)란?</h2>
+  <div class="qa-intro-text">지정된 산 정상(Summit)에 직접 등반하여 아마추어 무선국을 운용하는 <b>글로벌 무선 통신 프로그램</b>입니다. 무동력으로 산에 올라 전파를 송출하는 <b>'액티베이터(Activator)'</b>와, 원격지에서 이 신호를 수신해 교신에 응답하는 <b>'체이서(Chaser)'</b> 간의 양방향 참여로 이루어집니다.</div>
+  <div class="qa-intro-history"><b>프로그램 연혁 및 특징:</b> 2002년 영국에서 시작된 이후 전 세계로 확산되어 국제적인 산악 운용 프로그램으로 자리 잡았습니다. '최종 무동력 접근 원칙'과 엄격한 고도 제한 규정을 적용하여, 무선 운용 능력뿐만 아니라 산악 환경에서의 신체적 활동과 안전 관리를 동시에 요구하는 것이 특징입니다.</div>
+</section>
+
+<div class="qa-toolbar">
+  <span class="qa-toolbar-hint">질문을 누르면 답변이 펼쳐집니다 · 전체 17문항</span>
+  <button type="button" class="qa-btn" id="qaToggleAll" aria-pressed="false">모두 펼치기 ▾</button>
+</div>
+
+<h2 class="qa-cat">분류 1: 활성화(Activation) 물리적 경계 규정</h2>
+<details class="qa-item" id="q01">
+  <summary class="qa-q"><span class="qa-badge">Q01</span><span class="qa-q-text">SOTA 점수를 인정받으려면 반드시 산의 최정상(Peak)에 위치해야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">그렇지 않습니다. SOTA는 정상의 가장 높은 지점을 기준으로 <b>수직으로 25미터 아래까지</b>를 '활성화 구역(Activation Zone)'으로 정의합니다. 정상부에 시설물이 있거나 등산객이 많아 운용이 어렵다면, 이 고도차 이내의 공간으로 이동하여 운용해도 정상적으로 인정됩니다. 단, 이 구역을 벗어난 곳에서의 교신은 무효 처리됩니다.</div>
+</details>
+<details class="qa-item" id="q02">
+  <summary class="qa-q"><span class="qa-badge">Q02</span><span class="qa-q-text">케이블카나 차량을 이용해 산에 올라 운용해도 되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">산 중턱이나 정상 근처의 기착지까지 차량 및 케이블카로 이동하는 것은 가능합니다. 그러나 활성화 구역으로 진입하는 <b>최종 접근(Final access)</b>은 도보, 자전거 등 무조건 '사람의 힘(Person powered)'으로 이루어져야 합니다. 차량 내부에서의 교신은 전면 금지됩니다. (단, 장애인 운용자의 경우 전동 휠체어나 스쿠터 이용이 예외적으로 허용됩니다).</div>
+</details>
+<details class="qa-item" id="q03">
+  <summary class="qa-q"><span class="qa-badge">Q03</span><span class="qa-q-text">산 정상에 '사유지 출입금지' 팻말이 있을 경우 어떻게 해야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">타인의 사유지에 무단으로 출입해서는 안 됩니다. 다만 정상에서 수직 25미터 이내로 지정된 '활성화 구역' 중 일부가 사유지 바깥(예: 공공 등산로)에 포함된다면, 해당 위치에서 합법적으로 운용하는 것은 허용됩니다.</div>
+</details>
+<details class="qa-item" id="q04">
+  <summary class="qa-q"><span class="qa-badge">Q04</span><span class="qa-q-text">해발고도가 매우 높은 산임에도 SOTA 리스트에 없는 이유는 무엇인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">SOTA 산으로 등록되기 위해서는 산의 봉우리가 주변 안부(Saddle)로부터 솟아오른 <b>'돌출도(Prominence)'가 최소 150미터 이상</b>이어야 합니다. 해발고도가 아무리 높더라도 주변 능선과의 고도차가 이 돌출도 기준에 미달하면 공식 리스트에 오를 수 없습니다.</div>
+</details>
+<h2 class="qa-cat">분류 2: 교신(QSO) 및 로그(ADIF) 등록 방식</h2>
+<details class="qa-item" id="q05">
+  <summary class="qa-q"><span class="qa-badge">Q05</span><span class="qa-q-text">활성화(Activation) 성공을 위한 최소 교신 조건은 무엇인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">해당 산에서 <b>최소 4번 이상의 유효 교신</b>을 완료해야 액티베이터 포인트를 획득할 수 있습니다. 교신 시 상호 콜사인, 신호 리포트(RST), 그리고 대상 산의 SOTA 참조 번호(Reference Number)를 명확히 교환해야 합니다. 상대방이 체이서가 아닌 일반 무선사라도 교신 횟수에 정상적으로 포함됩니다.</div>
+</details>
+<details class="qa-item" id="q06">
+  <summary class="qa-q"><span class="qa-badge">Q06</span><span class="qa-q-text">일행과의 교신이나 위성 통신도 교신 실적에 포함되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><span class="highlight">포함되지 않습니다.</span> 동일한 산봉우리에 위치한 운용자 간의 근거리 교신은 실적에서 제외되며, 지상 리피터(중계기)나 위성(Satellite)을 경유한 통신 역시 SOTA 실적으로 집계되지 않습니다.</div>
+</details>
+<details class="qa-item" id="q07">
+  <summary class="qa-q"><span class="qa-badge">Q07</span><span class="qa-q-text">타 프로그램과 비교할 때 체이서(Chaser)의 로그 제출 방식에 차이가 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">명확한 차이가 존재합니다. POTA 등 일부 프로그램은 액티베이터가 로그를 업로드하면 헌터의 실적이 자동 인정되나, SOTA는 <b>체이서 본인이 직접 SOTA 데이터베이스에 자신의 교신 로그를 개별적으로 입력하거나 업로드</b>해야만 체이서 포인트를 획득할 수 있습니다.</div>
+</details>
+<details class="qa-item" id="q08">
+  <summary class="qa-q"><span class="qa-badge">Q08</span><span class="qa-q-text">제출이 완료된 로그에서 콜사인 오타 등을 발견한 경우 어떻게 수정하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">웹 데이터베이스 상에서 로그의 일부 항목만 직접 수정하는 것은 시스템 구조상 번거롭습니다. 올바르게 수정된 전체 로그(CSV 또는 ADIF) 파일을 준비한 뒤, 서버에 업로드되어 있는 기존 오류 로그를 전체 삭제하고 <b>수정본을 다시 업로드</b>하는 방식이 권장됩니다.</div>
+</details>
+<h2 class="qa-cat">분류 3: 포인트 산정 및 계절 보너스</h2>
+<details class="qa-item" id="q09">
+  <summary class="qa-q"><span class="qa-badge">Q09</span><span class="qa-q-text">SOTA 산의 포인트(점수)는 어떻게 산정되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">각 산의 해발 고도(Elevation) 구간에 따라 <b>1점부터 최대 10점까지 차등 부여</b>됩니다. 산별 고정 점수는 각 지역 협회의 ARM(협회 참조 매뉴얼)에 명시되어 있으며, 겨울철 등 가혹한 환경 기간에 운용할 경우 3점의 계절 보너스(Seasonal Bonus)가 추가로 주어지기도 합니다.</div>
+</details>
+<details class="qa-item" id="q10">
+  <summary class="qa-q"><span class="qa-badge">Q10</span><span class="qa-q-text">동일한 산을 여러 번 방문할 경우, 점수 인정 주기는 어떻게 됩니까?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">점수 인정 주기가 엄격히 구분됩니다. <b>액티베이터</b>는 동일 산에 대한 기본 포인트를 연(年) 단위 기준 <b>1년에 1회</b>만 획득할 수 있습니다. 반면 <b>체이서</b>는 동일한 산이라도 <b>하루(UTC 기준)에 1회씩</b> 매일 포인트를 누적할 수 있습니다.</div>
+</details>
+<details class="qa-item" id="q11">
+  <summary class="qa-q"><span class="qa-badge">Q11</span><span class="qa-q-text">같은 날 동일한 산을 다른 밴드나 모드로 여러 번 교신하면 체이서 포인트가 중복 부여되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><b>부여되지 않습니다.</b> 밴드나 통신 모드를 변경하여 여러 번 교신하더라도, 해당 산에 대한 체이서 포인트(Chaser Point)는 <b>하루(UTC 기준)에 단 한 번만</b> 획득할 수 있습니다. 심지어 같은 날 동일한 산에 2명 이상의 서로 다른 액티베이터가 위치해 각각 교신했더라도 체이서 점수는 1회만 인정됩니다. (단, 액티베이터의 4교신 실적을 돕기 위해 여러 밴드/모드로 호출해 주는 것은 권장됩니다.)</div>
+</details>
+<details class="qa-item" id="q12">
+  <summary class="qa-q"><span class="qa-badge">Q12</span><span class="qa-q-text">올해 이미 활성화한 산을 겨울철에 다시 방문하면 계절 보너스를 받을 수 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">가능합니다. 겨울철 보너스 기간 내에 동일 산을 다시 활성화하면, 연 1회 원칙에 따라 기본 포인트는 부여되지 않지만 겨울 조건 충족에 따른 <b>계절 보너스(3점)</b>는 별도로 획득할 수 있습니다.</div>
+</details>
+<details class="qa-item" id="q13">
+  <summary class="qa-q"><span class="qa-badge">Q13</span><span class="qa-q-text">콜사인이 변경될 경우 기존에 누적한 점수는 어떻게 처리되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">초기화되지 않습니다. SOTA 포인트는 콜사인이 아닌 운용자(Operator) 개인에게 귀속되는 시스템입니다. 따라서 과거에 사용했던 모든 콜사인의 점수는 합산되어 지속적으로 유지됩니다.</div>
+</details>
+<h2 class="qa-cat">분류 4: 산악 운용 장비 및 안전 수칙</h2>
+<details class="qa-item" id="q14">
+  <summary class="qa-q"><span class="qa-badge">Q14</span><span class="qa-q-text">출력을 높이기 위해 휴대용 가솔린 발전기를 사용할 수 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><span class="highlight">불가합니다.</span> SOTA 규정상 가솔린 등 화석 연료를 사용하는 발전기 운용은 금지됩니다. 배터리 또는 태양전지(Solar cells)와 같은 친환경 휴대용 전력원(Portable power source)만을 사용해야 합니다.</div>
+</details>
+<details class="qa-item" id="q15">
+  <summary class="qa-q"><span class="qa-badge">Q15</span><span class="qa-q-text">산악 운용을 위한 장비 구성은 주로 어떻게 이루어집니까?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">무게 및 전력의 제약으로 인해 액티베이터들은 무거운 납축전지 대신 리튬 폴리머(Li-Po) 배터리를 주로 채택하며, <b>QRP(저전력)와 CW(모스부호) 운용</b>을 선호하는 경향이 뚜렷합니다. 무전기는 초소형 올밴드 기기가 중심이 되며, 안테나는 등산 스틱이나 낚싯대(GRP)를 지지대로 활용하는 다이폴(Dipole) 등이 폭넓게 쓰입니다.</div>
+</details>
+<details class="qa-item" id="q16">
+  <summary class="qa-q"><span class="qa-badge">Q16</span><span class="qa-q-text">산악 환경 운용 시 최우선으로 고려해야 할 안전 수칙은 무엇입니까?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">고도가 300m 상승할 때마다 기온이 약 2도씩 하락하므로, 강풍에 따른 체감온도(Windchill) 저하에 각별히 대비해야 합니다. 악천후로 인해 대기에 정전기(Static)가 축적되거나 낙뢰(Lightning) 위험 징후가 보이면 <b>즉시 장비를 거두고 하산</b>해야 합니다. 교신 성립 여부보다 운용자의 안전 확보가 언제나 최우선입니다.</div>
+</details>
+<h2 class="qa-cat">분류 5: SOTA 어워드 발급 기준</h2>
+<details class="qa-item" id="q17">
+  <summary class="qa-q"><span class="qa-badge">Q17</span><span class="qa-q-text">1,000 포인트를 달성하면 주어지는 인증은 무엇입니까?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">액티베이터로서 누적 1,000 포인트를 달성할 경우 SOTA를 상징하는 <b>'마운틴 고트(Mountain Goat)'</b> 트로피를 신청할 수 있습니다. 체이서는 1,000점 달성 시 <b>'Shack Sloth'</b> 트로피가 수여되며, 양측 모두 2,500점 및 5,000점 단위로 지속적인 추가 인증서(Certificates) 획득이 가능합니다.</div>
+</details>
+
+<footer class="qa-footer">
+  <p>SOTA(Summits on the Air)는 교신 횟수 자체의 경쟁을 넘어, 제한된 장비와 변화하는 자연 환경 속에서 무선 운용 능력을 시험하고 스스로의 안전을 책임져야 하는 종합적인 야외 통신 프로그램입니다.</p>
+  <p>철저한 사전 계획 수립, LNT(Leave No Trace: 흔적 남기지 않기) 원칙에 따른 산악 생태계 보존, 그리고 교신에 응해준 체이서를 위한 정확한 로그 데이터 관리를 통해 모범적인 운용을 이어나가시기를 기원합니다. 이번 주말, 가벼운 배낭에 무전기를 챙겨 가까운 산으로 첫 SOTA 운용을 떠나보는 것은 어떨까요?</p>
+  <p>어느 아름다운 산 정상에서 여러분의 신호를 기다리고 있겠습니다. 73!</p>
+</footer>
+
+</main>
+<script src="assets/qa.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ARDF (Amateur Radio Direction Finding) 실전 Q&amp;A</title>
+<meta name="description" content="ARDF 입문, 수신기·안테나, 송신기 신호 청음, 독도법, 경기 규칙, 세부 종목 49가지 Q&amp;A">
+<link rel="stylesheet" href="assets/qa.css">
+</head>
+<body>
+<main class="qa theme-ardf">
+
+<header class="qa-header">
+  <h1>ARDF (Amateur Radio Direction Finding) 실전 Q&amp;A</h1>
+  <p>입문, 수신기와 안테나, 송신기 신호 청음, 독도법과 삼각측량, 경기 규칙, 세부 종목까지 ARDF 경기에 필요한 49가지 내용을 질의응답(FAQ) 형태로 정리했습니다. 모스 식별음은 답변 안의 버튼으로 직접 들어 볼 수 있습니다.</p>
+</header>
+
+<section class="qa-intro">
+  <h2>ARDF(아마추어 무선 방향탐지)란?</h2>
+  <div class="qa-intro-text">지도와 나침반, 지향성 안테나가 달린 수신기를 들고 숲속에 숨겨진 <b>무선 송신기(여우, Fox)</b>를 찾아 제한 시간 안에 결승선으로 돌아오는 <b>무선 스포츠</b>입니다. 전파 오리엔티어링(Radio Orienteering) 또는 여우사냥(Foxhunting)이라고도 부르며, 경기 참가에는 무선 자격증이 필요하지 않습니다. POTA·SOTA·WWFF·IOTA가 교신 실적을 쌓는 어워드 프로그램이라면, ARDF는 성별·연령 등급별로 기록을 겨루는 <b>경기 종목</b>이라는 점이 다릅니다.</div>
+  <div class="qa-intro-history"><b>종목 연혁:</b> 1950년대 말 북유럽과 동유럽에서 시작되어 1961년 스웨덴 스톡홀름에서 첫 유럽선수권대회가 열렸습니다. 나라마다 달랐던 경기 규칙은 국제아마추어무선연맹(IARU)이 표준화했고, 이 표준 규칙으로 1980년 폴란드 체트니에보(Cetniewo)에서 첫 세계선수권대회가 열렸습니다. 2000년 중국 난징 대회는 유럽 밖에서 열린 첫 세계선수권대회였습니다.</div>
+</section>
+
+<h2 class="qa-sec-title">참가 전 꼭 확인해야 할 장비</h2>
+<div class="qa-gear">
+  <div class="qa-gear-card"><div class="qa-gear-img"><img src="img/sf35gx-hand.jpg" alt="방향탐지 수신기" loading="lazy"></div>
+    <div class="qa-gear-info"><b>방향탐지 수신기</b><p>안테나 조립형 전용 수신기 (수신기 신청 시 현장 대여)</p></div></div>
+  <div class="qa-gear-card"><div class="qa-gear-img"><img src="img/si-card-finish.jpg" alt="전자 기록 카드 SI-Card" loading="lazy"></div>
+    <div class="qa-gear-info"><b>전자 기록 카드 (SI-Card)</b><p>손가락에 끼우고 거치대에 1초 태깅하면 통과 기록을 자동 저장</p></div></div>
+  <div class="qa-gear-card"><div class="qa-gear-img"><img src="img/map-compass.jpg" alt="지도와 플레이트 나침반" loading="lazy"></div>
+    <div class="qa-gear-info"><b>지도 &amp; 플레이트 나침반</b><p>5m 단위 등고선 특수 지도와 방위각을 작도할 투명 나침반</p></div></div>
+</div>
+<h2 class="qa-sec-title">자주 묻는 질문</h2>
+
+<div class="qa-toolbar">
+  <span class="qa-toolbar-hint">질문을 누르면 답변이 펼쳐집니다 · 전체 49문항</span>
+  <button type="button" class="qa-btn" id="qaToggleAll" aria-pressed="false">모두 펼치기 ▾</button>
+</div>
+
+<h2 class="qa-cat">분류 1: 기본 개념 & 입문</h2>
+<details class="qa-item" id="q01">
+  <summary class="qa-q"><span class="qa-badge">Q01</span><span class="qa-q-text">ARDF(아마추어 무선 방향탐지)가 정확히 무엇인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">지도, 나침반, 지향성 안테나가 달린 수신기를 들고 숲속이나 야외에 숨겨진 <strong>무선 송신기(폭스/여우)</strong>를 찾아 정해진 시간 내에 골인 지점으로 돌아오는 스포츠입니다.<br>흔히 <strong>전파 오리엔티어링(Radio orienteering)</strong> 또는 <strong>여우사냥(Foxhunting)</strong>으로 불립니다.</div>
+</details>
+<details class="qa-item" id="q02">
+  <summary class="qa-q"><span class="qa-badge">Q02</span><span class="qa-q-text">아마추어 무선사 자격증이 꼭 있어야 참여할 수 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">일반적인 대회 참가나 체험 같은 단순 수신(경기 참가)은 <strong>무선사 자격증이 없어도 누구나 가능</strong>합니다. <strong>단, 송신기(폭스)를 직접 설치·운용</strong>하거나 <strong>일부 국가대표 선발전</strong> 등 특수 규정이 적용되는 대회에서는 <strong>아마추어무선기사 자격이 필요할 수 있습니다.</strong></div>
+</details>
+<details class="qa-item" id="q03">
+  <summary class="qa-q"><span class="qa-badge">Q03</span><span class="qa-q-text">체력이 약하거나 달리기를 못해도 할 수 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>전혀 문제되지 않습니다.</strong> 단순히 빨리 달리는 것보다 <strong>전파의 방향을 정확히 측정</strong>하고, <strong>지도에서 송신기의 위치를 파악</strong>해 <strong>가장 효율적인 이동 경로를 설계</strong>하는 <strong>독도법과 루트 전략이 50% 이상</strong>을 차지합니다.</div>
+</details>
+<details class="qa-item" id="q04">
+  <summary class="qa-q"><span class="qa-badge">Q04</span><span class="qa-q-text">일반 오리엔티어링(OL)과는 무엇이 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">일반 오리엔티어링은 지도 위에 컨트롤 포인트(목표 지점)의 위치가 원으로 인쇄되어 있어 목표까지 최단 경로의 길을 찾는 능력(독도법)이 주가 됩니다. 반면 ARDF는 <strong>지도에 목표 지점이 전혀 표시되어 있지 않으며</strong>, 오직 <strong>수신기로 전파의 방향을 측정</strong>해 스스로 지도 위에 위치를 찾아내야 합니다.</div>
+</details>
+<details class="qa-item" id="q05">
+  <summary class="qa-q"><span class="qa-badge">Q05</span><span class="qa-q-text">처음 입문하려면 어떻게 시작해야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">한국아마추어무선연맹(KARL) 본부 및 지부, 또는 ARDF 위원회에서 주최하는 <strong>대회나 강습회에 직접 참가하는 것이 가장 좋습니다.</strong> 장비 대여와 함께 지도 보는 법(독도법)과 신호 탐지 기초를 배울 수 있습니다.</div>
+</details>
+<details class="qa-item" id="q06">
+  <summary class="qa-q"><span class="qa-badge">Q06</span><span class="qa-q-text">남녀노소 누구나 같이 경쟁하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>모든 연령과 성별이 한 번에 같은 순위로 경쟁하지 않습니다.</strong> 성별과 만 나이를 기준으로 <strong>M19, M21, M40, M50, W21, W35</strong> 등 <strong>세분화된 등급(카테고리)별로 나뉘어 공정하게 순위</strong>를 매깁니다.</div>
+</details>
+<h2 class="qa-cat">분류 2: 수신기 & 안테나 테크닉</h2>
+<details class="qa-item" id="q07">
+  <summary class="qa-q"><span class="qa-badge">Q07</span><span class="qa-q-text">대회에서는 어떤 주파수 대역을 쓰나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">세계아마추어무선연맹(IARU) 국제 표준 규격으로 주로 <strong>3.5MHz (80m 밴드, 단파)</strong>와 <strong>144MHz (2m 밴드, 초단파)</strong> 두 가지 대역을 사용합니다.</div>
+</details>
+<details class="qa-item" id="q08">
+  <summary class="qa-q"><span class="qa-badge">Q08</span><span class="qa-q-text">3.5MHz와 144MHz는 찾는 느낌이 어떻게 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>3.5MHz</strong>는 전파가 지면을 따라 안정적으로 흐르고 장애물 반사가 적어 <strong>방위각 측정이 정직</strong>합니다. <strong>144MHz</strong>는 직진성이 강해 바위, 철탑, 능선 등에 반사되는 <strong>반사파(Echo)가 자주 발생</strong>하므로 <strong>직접 신호와 반사 신호를 가려내는 테크닉이 중요</strong>합니다.</div>
+</details>
+<details class="qa-item" id="q09">
+  <summary class="qa-q"><span class="qa-badge">Q09</span><span class="qa-q-text">수신기는 어떤 것을 쓰나요? 시중 라디오로도 가능한가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>일반 라디오로는 불가능합니다.</strong> 특정 방향의 신호만 강하게 잡아주는 <strong>지향성 안테나(페라이트 바/루프 또는 야기 안테나)</strong>와 신호 세기를 줄여주는 <strong>감쇠기(Attenuator)</strong>가 내장된 <strong>ARDF 전용 수신기</strong>를 써야 합니다.</div>
+</details>
+<details class="qa-item" id="q10">
+  <summary class="qa-q"><span class="qa-badge">Q10</span><span class="qa-q-text">수신기는 국내외에서 어떤 기종들을 많이 쓰나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">유럽 및 국내 현장에서는 체코산 <strong>SUPERFOX (3,5MX, 145DX)</strong>나 러시아산 <strong>Altai</strong>, <strong>중국제 입문 키트</strong> 등이 널리 쓰입니다. 특히 <strong>SUPERFOX 시리즈</strong>는 감도와 신뢰성이 검증되어 많은 선수가 사용합니다.</div>
+</details>
+<details class="qa-item" id="q11">
+  <summary class="qa-q"><span class="qa-badge">Q11</span><span class="qa-q-text">3.5MHz 수신기에서 '센스 안테나(Sense Antenna)' 스위치는 왜 켜고 끄나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">3.5MHz 페라이트 바 안테나는 앞뒤 180도 양방향으로 신호가 잡히는 8자형 패턴을 가집니다. 이때 수직 와이어(<strong>센스 안테나</strong>)를 켜면 신호 패턴이 <strong>하트형(Cardioid)</strong>으로 합성되어 <strong>신호가 '앞에 있는지 뒤에 있는지' 180도 방향 모호성을 판별</strong>할 수 있습니다.</div>
+</details>
+<details class="qa-item" id="q12">
+  <summary class="qa-q"><span class="qa-badge">Q12</span><span class="qa-q-text">144MHz 수신기 안테나는 왜 가로(수평)가 아니라 세로(수직)로 세워 드나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">ARDF 규정상 <strong>144MHz 송신기</strong>는 <strong>수직 편파(Vertical Polarization)</strong> 안테나로 신호를 보냅니다. 송신과 수신의 편파 방향이 일치해야 편파 손실 없이 최대 감도로 수신되므로, 야기 안테나의 엘리먼트를 <strong>지면과 수직</strong>으로 세워 탐색합니다.</div>
+</details>
+<details class="qa-item" id="q13">
+  <summary class="qa-q"><span class="qa-badge">Q13</span><span class="qa-q-text">감쇠기(Attenuator)를 조절하는 올바른 타이밍은 언제인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">송신기에 접근하여 수신기 볼륨이 최대치로 포화되어, 안테나를 어느 방향으로 돌려도 소리 크기 차이가 느껴지지 않을 때입니다. 소리가 <strong>'겨우 알아들을 수 있을 만큼' 감도를 낮춰야 안테나 회전 시 최대점(Peak)이나 최소점(Null)이 명확</strong>해집니다.</div>
+</details>
+<details class="qa-item" id="q14">
+  <summary class="qa-q"><span class="qa-badge">Q14</span><span class="qa-q-text">헤드폰은 어떤 것을 고르는 것이 좋나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">숲속 나뭇가지에 걸리지 않도록 선이 튼튼한 제품을 씁니다. 귀를 완전히 막는 밀폐형보다는 <strong>주변 소리(발소리, 차량 등 위험 요소)를 함께 인지할 수 있는 가벼운 오픈형/온이어 헤드폰</strong>이 안전상 권장됩니다.</div>
+</details>
+<details class="qa-item" id="q15">
+  <summary class="qa-q"><span class="qa-badge">Q15</span><span class="qa-q-text">지도판(Map Board)은 왜 팔(손목)에 고정하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>수신기와 나침반을 든 상태로 산악 지형을 뛰어야 하므로 두 손이 자유롭지 못합니다.</strong> 지도판을 한쪽 팔에 밴드로 고정하면 <strong>달리는 중에도 나침반을 대고 즉시 방위각을 작도</strong>할 수 있어 시간을 단축시킵니다.</div>
+</details>
+<h2 class="qa-cat">분류 3: 송신기 신호 & 청음</h2>
+<details class="qa-item" id="q16">
+  <summary class="qa-q"><span class="qa-badge">Q16</span><span class="qa-q-text">'여우(Fox)'는 무엇이고 어떻게 찾나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">숲속에 숨겨진 <strong>소형 자동 무선 송신기</strong>입니다. 보통 5개의 송신기가 번갈아 가며 1분씩 신호를 보내며, 수신기의 지향 안테나를 돌려 신호가 가장 강한 방향을 지도에 작도하여 찾아갑니다.</div>
+</details>
+<details class="qa-item" id="q17">
+  <summary class="qa-q"><span class="qa-badge">Q17</span><span class="qa-q-text">송신기 전파 출력은 대략 몇 와트(W)인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">클래식 기준 <strong>3.5MHz 송신기</strong>는 약 <strong>1W ~ 3W 내외</strong>, <strong>144MHz 송신기</strong>는 약 <strong>0.5W ~ 1.5W 내외</strong>의 소출력입니다. 배터리를 아끼고 경기 구역 내에서만 적절히 수신되도록 제어됩니다.</div>
+</details>
+<details class="qa-item" id="q18">
+  <summary class="qa-q"><span class="qa-badge">Q18</span><span class="qa-q-text">송신기는 1분 동안 모스 신호만 계속 나오나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>아닙니다.</strong> 경기 규정상 처음 약 <strong>50~55초 동안은 MOE 같은 식별 신호</strong>를 반복 송출하고, 나머지 약 5초 동안은 다음 신호 송신을 위하여 지속적인 연속 톤(단일 삐- 소리)을 보내줍니다.</div>
+</details>
+<details class="qa-item" id="q19">
+  <summary class="qa-q"><span class="qa-badge">Q19</span><span class="qa-q-text">왜 송신기 신호는 하필 'MO'로 시작하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">모스 부호로 M은 대시 두 개(<strong>--</strong>), O는 대시 세 개(<strong>---</strong>)로 이루어져 소리가 길고 묵직합니다. 잡음이 심한 숲속 환경에서도 <strong>노이즈와 쉽게 구별</strong>되며 귀로 식별하기 가장 유리하기 때문입니다.</div>
+</details>
+<details class="qa-item" id="q20">
+  <summary class="qa-q"><span class="qa-badge">Q20</span><span class="qa-q-text">숨겨진 송신기(여우)는 몇 개이고 소리로 어떻게 구별하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">정규 클래식 경기에서는 <strong>총 5개(1~5번)</strong>가 설치되며, 1분씩 순서대로 5분 주기로 신호를 송출합니다. 실제 헤드폰에서는 <strong>700Hz 표준 비프음</strong>으로 들립니다. <strong>끝에 붙는 점(Dot) 소리의 개수(1개~5개)를 귀로 세어 번호를 즉시 판별</strong>합니다.<br>• 1번: <strong>MOE</strong> (-- --- .)<br>• 2번: <strong>MOI</strong> (-- --- ..)<br>• 3번: <strong>MOS</strong> (-- --- ...)<br>• 4번: <strong>MOH</strong> (-- --- ....)<br>• 5번: <strong>MO5</strong> (-- --- .....)<br>아래 버튼을 눌러 각 번호별 실제 식별음을 직접 확인해 보세요.<div class="qa-player"><button type="button" class="qa-btn" data-code="MOE" data-fast="0">▶ 1번 MOE</button><button type="button" class="qa-btn" data-code="MOI" data-fast="0">▶ 2번 MOI</button><button type="button" class="qa-btn" data-code="MOS" data-fast="0">▶ 3번 MOS</button><button type="button" class="qa-btn" data-code="MOH" data-fast="0">▶ 4번 MOH</button><button type="button" class="qa-btn" data-code="MO5" data-fast="0">▶ 5번 MO5</button><span class="qa-player-desc">점(.) 개수로 번호를 구별하는 식별음 (700Hz)</span></div></div>
+</details>
+<details class="qa-item" id="q21">
+  <summary class="qa-q"><span class="qa-badge">Q21</span><span class="qa-q-text">피니시 비콘(Beacon)은 무엇이고 일반 여우와 어떻게 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">일반 여우(1~5번)는 1분씩 번갈아 켜지지만, 골(Finish) 지점에 있는 비콘은 별도 전용 주파수에서 <strong>경기 내내 쉬지 않고 연속 송출</strong>됩니다. 뒤에 점 부호 없이 묵직한 대시 부호로만 이루어진 <strong>MO (-- ---)</strong> 신호를 치며, 경기를 마치고 <strong>복귀하는 선수의 유도 신호 역할</strong>을 합니다. <strong>길을 잃었을 때 이 신호만 잡으면 본부로 복귀</strong>할 수 있습니다.<div class="qa-player"><button type="button" class="qa-btn" data-code="MO" data-fast="0">▶ MO 신호 듣기</button><span class="qa-player-desc">피니시 비콘 MO 송출음 (700Hz)</span></div></div>
+</details>
+<details class="qa-item" id="q22">
+  <summary class="qa-q"><span class="qa-badge">Q22</span><span class="qa-q-text">[청음] 송신기에 가까워질수록 수신기 소리는 어떻게 변하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">송신기 수십 미터 이내로 근접하면 신호가 회로 한계치를 넘어 <strong>'찌직-' 하며 찌그러지거나 귀가 아플 정도로 포화</strong>됩니다. 이때 즉시 <strong>감쇠기(Attenuator) 다이얼</strong>을 돌려 감도를 깎아내야 깨끗한 톤으로 방향을 잡을 수 있습니다.</div>
+</details>
+<h2 class="qa-cat">분류 4: 독도법 & 삼각측량</h2>
+<details class="qa-item" id="q23">
+  <summary class="qa-q"><span class="qa-badge">Q23</span><span class="qa-q-text">ARDF 경기용 지도는 일반 등산 지도와 무엇이 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">국제오리엔티어링연맹(IOF) 표준 규격 지도(축척 1:10,000 또는 1:15,000)를 씁니다. 달릴 수 있는 숲(흰색), 통과가 어려운 가시덤불(진한 녹색), 바위, 습지 등 보행 속도에 영향을 주는 <strong>식생 정보 및 상세 지도기호가 정밀하게 기재</strong>되어 있습니다.</div>
+</details>
+<details class="qa-item" id="q24">
+  <summary class="qa-q"><span class="qa-badge">Q24</span><span class="qa-q-text">피크(Peak)와 널(Null)의 차이는 무엇인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>피크법(peak)</strong>은 신호가 <strong>'가장 크게 들리는 방향'</strong>을 찾는 방법으로 대략적인 방향을 빠르게 잡을 때 씁니다. <strong>널법(Null)</strong>은 신호가 <strong>'완전히 사라지는 최소점'</strong>을 찾는 방법으로, 소리가 끊기는 각도가 매우 예리하므로 정밀한 선을 그을 때 사용합니다.</div>
+</details>
+<details class="qa-item" id="q25">
+  <summary class="qa-q"><span class="qa-badge">Q25</span><span class="qa-q-text">삼각측량(Triangulation)은 구체적으로 어떻게 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">위치 A에서 특정 여우의 방위각을 나침반으로 재어 지도에 선을 긋습니다. 그다음 다른 위치 B로 이동해 같은 여우의 방위각을 다시 그립니다. <strong>두 개 이상의 직선이 교차하는 지점</strong>이 예상 위치입니다. 오차를 줄이기 위해 제3의 지점 C에서 한 번 더 그어 <strong>교차 삼각 지점</strong>을 확인합니다.</div>
+</details>
+<details class="qa-item" id="q26">
+  <summary class="qa-q"><span class="qa-badge">Q26</span><span class="qa-q-text">144MHz에서 반사파(Echo)에 속지 않는 요령이 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">계곡이나 암벽 앞에서는 반사파가 직진파보다 강할 수 있습니다. <strong>능선이나 시야가 트인 곳으로 이동해 재측정</strong>해야 합니다. 또한 수신기를 들고 <strong>좌우로 5~10m 이동했을 때 방위각이 비정상적으로 돌아간다면 반사파로 판단</strong>해야 합니다.</div>
+</details>
+<details class="qa-item" id="q27">
+  <summary class="qa-q"><span class="qa-badge">Q27</span><span class="qa-q-text">송신기가 반경 50m 안에 들어왔을 때 최종 접근 요령은?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">지향성이 무너지므로 감쇠기(Attenuator)를 조절해 <strong>신호음을 최대한 줄입니다.</strong> 안테나를 천천히 돌려 소리가 뚜렷한 쪽의 <strong>자연 은폐물(쓰러진 나무, 큰 바위 뒤, 덤불 틈)을 육안으로 관찰하며 접근</strong>합니다.</div>
+</details>
+<h2 class="qa-cat">분류 5: 경기 진행 & 규칙 타임라인</h2>
+<details class="qa-item" id="q28">
+  <summary class="qa-q"><span class="qa-badge">Q28</span><span class="qa-q-text">경기 전 수신 점검 구역(Receiver Testing Area)에서는 무엇을 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">출발 대기선 주변에 주최 측이 테스트 송신기를 켜두는 구역입니다. 경기장에 들어가기 전 <strong>수신기 배터리 잔량, 헤드폰 음질, 튜닝 다이얼 및 안테나 결합 상태</strong>를 점검할 수 있는 필수 절차 구역입니다.</div>
+</details>
+<details class="qa-item" id="q29">
+  <summary class="qa-q"><span class="qa-badge">Q29</span><span class="qa-q-text">출발하자마자 바로 뛰어가야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>아닙니다.</strong> 출발선(스타트)에서 1번부터 5번 송신기가 <strong>한 바퀴(5분) 동안 차례대로 울릴 때까지 나침반과 수신기로 방위각을 측정해 지도에 선을 긋는 것이 정석입니다.</strong> 대략적인 위치를 지도에 그려놓고 최적의 방문 순서를 정한 뒤 출발해야 체력과 시간을 아낍니다.</div>
+</details>
+<details class="qa-item" id="q30">
+  <summary class="qa-q"><span class="qa-badge">Q30</span><span class="qa-q-text">송신기는 1번부터 순서대로 찾아야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>아닙니다. 번호 순서와 상관없이 제한 시간 내에 본인 등급에 지정된 송신기</strong>를 가장 많이, 가장 빠른 시간 내에 찾고 골인하는 사람이 이깁니다. 따라서 <strong>지형과 거리를 고려한 루트 선택(Route Choice)</strong>이 핵심입니다.</div>
+</details>
+<details class="qa-item" id="q31">
+  <summary class="qa-q"><span class="qa-badge">Q31</span><span class="qa-q-text">송신기 주변에 갔는데 플래그가 안 보여요. 보통 어디에 숨겨두나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">ARDF 규정상 송신기는 땅속에 파묻지 않으며, <strong>반경 수 미터 내에 오면 육안으로 식별 가능</strong>한 바위 뒤나 통나무 아래에 둡니다. 주변에 <strong>주황색/흰색 오리엔티어링 플래그 삼각기둥과 전자 펀치가 함께 걸려 있으므로 색상을 잘 살펴야 합니다.</strong></div>
+</details>
+<details class="qa-item" id="q32">
+  <summary class="qa-q"><span class="qa-badge">Q32</span><span class="qa-q-text">송신기를 찾았다는 것은 어떻게 증명하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>송신기 옆에 설치된 전자식 체크 펀치(SportIdent 카드 태그)에 손목 태그를 접촉</strong>해 기록 칩에 저장하거나, 수동 펀치로 종이 기록 카드에 고유 핀 구멍을 뚫어 방문을 인증합니다.</div>
+</details>
+<details class="qa-item" id="q33">
+  <summary class="qa-q"><span class="qa-badge">Q33</span><span class="qa-q-text">다른 선수를 뒤따라가서(피치히치) 찾으면 안 되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>규칙상 엄격히 금지됩니다.</strong> 타인의 수신 소리를 엿듣거나 다른 선수를 고의로 미행하는 행위는 <strong>실격(Disqualification)</strong> 사유가 됩니다. <strong>각자 독립적으로 방향을 잡고 탐색</strong>해야 합니다.</div>
+</details>
+<details class="qa-item" id="q34">
+  <summary class="qa-q"><span class="qa-badge">Q34</span><span class="qa-q-text">제한 시간(Time Limit)을 1초라도 넘기면 어떻게 되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">보통 제한 시간(120분 또는 140분)을 1초라도 초과하여 골인하면 아무리 많은 송신기를 찾았더라도 <strong>규정상 전체 실격(Over Time / DNF)</strong> 처리됩니다. 따라서 송신기를 덜 찾았더라도 시간 내에 복귀하는 것이 순위 유지에 절대적으로 유리합니다.<br><div class="reference-box"><strong>[참고: 경기 공식 기록지 주요 약어]</strong><br>• <strong>DNS</strong> (Did Not Start): 출발하지 않음 (기권 또는 불참)<br>• <strong>DNF</strong> (Did Not Finish): 완주하지 못함 (제한시간 초과, 중도 포기 등)<br>• <strong>DSQ / DQ</strong> (Disqualified): 실격 (피치히치 미행 등 경기 규칙 위반)<br>• <strong>OT</strong> (Over Time): 제한 시간 초과 (DNF 처리의 세부 사유)</div></div>
+</details>
+<h2 class="qa-cat">분류 6: 세부 종목 & 필드 안전</h2>
+<details class="qa-item" id="q35">
+  <summary class="qa-q"><span class="qa-badge">Q35</span><span class="qa-q-text">클래식(Classic) 종목의 기본 진행 방식과 경기 시간은?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">넓은 산악 지형(4~8㎢)에 5개의 송신기를 분산 배치하고, 정해진 제한 시간(<strong>통상 120분 ~ 140분</strong>) 내에 송신기를 탐색하는 대표 정규 종목입니다. 3.5MHz와 144MHz 각각 별도의 경기로 치러집니다.</div>
+</details>
+<details class="qa-item" id="q36">
+  <summary class="qa-q"><span class="qa-badge">Q36</span><span class="qa-q-text">스프린트(Sprint)는 클래식과 무엇이 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">도시 공원이나 좁은 숲(0.5~1㎢)에서 열리는 초단거리 종목입니다. <strong>3.5MHz 단파 대역만 사용</strong>하며, 우승권 기록이 <strong>20분 ~ 30분 내외</strong>로 매우 빠르게 전개됩니다. 숲을 달리는 순발력과 신속한 방위각 판단력이 핵심입니다.</div>
+</details>
+<details class="qa-item" id="q37">
+  <summary class="qa-q"><span class="qa-badge">Q37</span><span class="qa-q-text">스프린트의 신호 송출 주기는 왜 12초인가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">클래식은 1개 송신기가 1분씩 울려 한 바퀴에 5분이 걸리지만, 스프린트는 <strong>12초씩 송출되어 5개 송신기가 1분(60초) 만에 한 바퀴</strong>를 돕니다. 고속 모스 부호가 사용되므로 10초 이내에 방위각 측정을 끝내야 합니다.</div>
+</details>
+<details class="qa-item" id="q38">
+  <summary class="qa-q"><span class="qa-badge">Q38</span><span class="qa-q-text">스프린트의 '슬로우 여우(TX1~TX5)', '패스트 여우(TX 1F~TX 5F)', '스펙테이터 컨트롤(S)'이란?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">스프린트는 보통 2개 주파수를 씁니다. 1단계 주파수(여우 1~5번)를 찾은 뒤 관중석 앞을 통과하는 <strong>스펙테이터 컨트롤(S:중간 비콘)</strong>을 찍고, 그 자리에서 수신기 주파수를 2단계 주파수로 전환해 나머지 송신기(1F~5F)를 탐색하고 골인하는 구조입니다.</div>
+</details>
+<details class="qa-item" id="q39">
+  <summary class="qa-q"><span class="qa-badge">Q39</span><span class="qa-q-text">[청음] 스프린트 종목의 고속(Fast) 모스는 클래식과 속도가 얼마나 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">스프린트는 12초 만에 한 송신기의 차례가 끝나므로 일반 클래식 경기보다 <strong>모스 타음 속도가 약 1.5배~2배 빠릅니다</strong>. 귀로 빠르게 톤을 캐치하는 훈련이 필요합니다. 아래에서 5번 여우(MO5) 신호의 속도 차이를 직접 비교해 보세요.<div class="qa-player"><button type="button" class="qa-btn" data-code="MO5" data-fast="0">▶ 일반 속도 (클래식)</button><button type="button" class="qa-btn" data-code="MO5" data-fast="1">▶ 고속 (스프린트)</button><span class="qa-player-desc">5번 여우(MO5) 기준 속도 비교</span></div></div>
+</details>
+<details class="qa-item" id="q40">
+  <summary class="qa-q"><span class="qa-badge">Q40</span><span class="qa-q-text">폭스오링(Foxoring)은 어떤 방식으로 진행되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>오리엔티어링과 여우사냥의 결합 종목</strong>입니다. 지도 위에 인쇄된 작은 원 지점까지 지도와 나침반만 보고 먼저 달린 뒤, 그 반경 내에서 초저출력 여우 신호를 귀로 찾아내는 방식입니다.</div>
+</details>
+<details class="qa-item" id="q41">
+  <summary class="qa-q"><span class="qa-badge">Q41</span><span class="qa-q-text">폭스오링 지도에 인쇄된 원(Circle)의 중심에 여우가 있나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>아닙니다. 원의 정중앙에 송신기가 있지 않습니다.</strong> 원 내부(반경 약 50~100m)의 <strong>임의의 자연 은폐물(바위 뒤, 쓰러진 통나무, 덤불 속 등)</strong>에 숨겨져 있습니다. 따라서 원 중심만 무작정 파고들지 말고, <strong>원 경계선에 들어서는 순간부터 360도 전파 스캔을 시작</strong>해야 합니다.</div>
+</details>
+<details class="qa-item" id="q42">
+  <summary class="qa-q"><span class="qa-badge">Q42</span><span class="qa-q-text">폭스오링은 신호가 나올 때까지 클래식처럼 5분을 기다려야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>기다릴 필요가 없습니다.</strong> 클래식과 달리 각 송신기가 <strong>상시 연속 송출(Continuous TX)</strong>되거나 매우 빠른 초단위 주기로 울립니다. 순환 주기를 기다리며 서 있을 필요 없이 <strong>원 안에 진입하자마자 즉시 탐색이 가능</strong>하므로 경기 템포가 매우 빠릅니다.</div>
+</details>
+<details class="qa-item" id="q43">
+  <summary class="qa-q"><span class="qa-badge">Q43</span><span class="qa-q-text">폭스오링 원 사이를 이동할 때의 주법(러닝 요령)은?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">원 밖에서는 신호가 들리지 않으므로 수신기에 신경 쓰지 않아도 됩니다. <strong>원과 원 사이는 지도와 나침반만 보고 전력 질주(순수 오리엔티어링 주력)</strong>하고, <strong>원 경계선에 진입하는 직전(어택 포인트)에 감쇠기를 세팅하고 탐색 모드로 전환</strong>하는 것이 기록 단축의 핵심입니다.</div>
+</details>
+<details class="qa-item" id="q44">
+  <summary class="qa-q"><span class="qa-badge">Q44</span><span class="qa-q-text">폭스오링에서의 수신기 조작 테크닉은 클래식과 어떻게 다른가요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">수십 미터 이내의 초근접 탐색이므로 <strong>센스 안테나는 거의 켜지 않습니다.</strong> 페라이트 바 안테나의 정밀한 <strong>널(Null) 소멸점 특성</strong>과 <strong>감쇠기(Attenuator)를 빠르게 깎아내는 손놀림</strong>만으로 1~2분 안에 송신기 플래그를 펀칭합니다.</div>
+</details>
+<details class="qa-item" id="q45">
+  <summary class="qa-q"><span class="qa-badge">Q45</span><span class="qa-q-text">초보자가 처음 출전하기 가장 부담 없는 종목은?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>클래식(Classic) 경기 또는 근린공원에서 열리는 폭스오링(Foxoring) 경기</strong>를 추천합니다. 3.5MHz 대역은 장애물 반사파가 적어 전파 방향이 정직하고, 공원 폭스오링은 산길 조난 위험 없이 안전하게 길 찾기와 전파 수신 방법을 익히기 좋습니다.</div>
+</details>
+<details class="qa-item" id="q46">
+  <summary class="qa-q"><span class="qa-badge">Q46</span><span class="qa-q-text">복장과 신발은 어떤 것을 신어야 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">가시덤불과 잡목에 긁히지 않도록 <strong>질긴 긴팔과 긴바지 기능성 의류</strong>를 입어야 합니다. 신발은 미끄러운 산길과 낙엽에서 접지력을 보장하는 <strong>트레일 러닝화 또는 밑창 접지력이 좋은 운동화를 추천합니다.</strong></div>
+</details>
+<details class="qa-item" id="q47">
+  <summary class="qa-q"><span class="qa-badge">Q47</span><span class="qa-q-text">비가 오는 우천 시에도 경기가 진행되나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a"><strong>태풍이나 폭우 수준이 아니라면 기본적으로 진행됩니다.</strong> 수신기 기판에 빗물이 스며들지 않도록 <strong>방수 비닐 팩이나 랩</strong>으로 감싸고, 지도 역시 <strong>방수 지도 케이스</strong>에 넣어 습기를 차단해야 합니다.</div>
+</details>
+<details class="qa-item" id="q48">
+  <summary class="qa-q"><span class="qa-badge">Q48</span><span class="qa-q-text">경기 중 산속에서 길을 완전히 잃었을 때는 어떻게 하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">1) 수신기를 <strong>비콘(Finish) 주파수로 전환하여 피니시 신호 방향을 잡고 복귀합니다.</strong><br>2) 신호가 안 잡히면 큰 임도나 능선으로 올라가 <strong>출발 전 주최 측이 공지한 안전 복귀 방향(Safety Line)을 따라 이동</strong>합니다.<br>3) <strong>비상시 호루라기를 3회 연속</strong> 불어 구조를 요청합니다.</div>
+</details>
+<details class="qa-item" id="q49">
+  <summary class="qa-q"><span class="qa-badge">Q49</span><span class="qa-q-text">국내 공식 대회나 연습 모임 정보는 어디서 확인하나요?</span><span class="qa-toggle" aria-hidden="true"></span></summary>
+  <div class="qa-a">사단법인 한국아마추어무선연맹(KARL) 본부 웹사이트 공지사항, 각 시·도 지부 게시판, 연맹 산하 ARDF 위원회 커뮤니티 공지를 통해 연간 전국대회 일정 및 지역 연습회 정보를 확인할 수 있습니다.</div>
+</details>
+
+<h2 class="qa-sec-title">현장에서 보게 되는 실제 모습</h2>
+<div class="qa-photos">
+  <a class="qa-photo" href="img/ardf-field-01.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-01.jpg" alt="ARDF 현장 사진 1" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-02.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-02.jpg" alt="ARDF 현장 사진 2" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-03.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-03.jpg" alt="ARDF 현장 사진 3" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-04.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-04.jpg" alt="ARDF 현장 사진 4" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-05.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-05.jpg" alt="ARDF 현장 사진 5" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-06.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-06.jpg" alt="ARDF 현장 사진 6" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-07.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-07.jpg" alt="ARDF 현장 사진 7" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-08.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-08.jpg" alt="ARDF 현장 사진 8" loading="lazy"></a>
+  <a class="qa-photo" href="img/ardf-field-09.jpg" target="_blank" rel="noopener"><img src="img/ardf-field-09.jpg" alt="ARDF 현장 사진 9" loading="lazy"></a>
+</div>
+<div class="qa-modal" id="qaModal" role="dialog" aria-modal="true" aria-label="사진 확대">
+  <div class="qa-modal-wrap"><button type="button" class="qa-modal-close" aria-label="닫기">&times;</button><img id="qaModalImg" alt=""></div>
+</div>
+
+<footer class="qa-footer">
+  <p>ARDF는 전파를 귀로 읽고 지도 위에 길을 그리는, 머리와 다리를 함께 쓰는 무선 스포츠입니다. 처음에는 송신기 하나를 찾아 펀칭하는 것만으로도 충분한 성취감을 느낄 수 있습니다.</p>
+  <p>산과 공원을 달리는 경기인 만큼 안전이 언제나 우선입니다. 제한 시간 안에 복귀하고, 길을 잃으면 비콘 신호와 안전 복귀 방향을 따르며, 경기 후에는 LNT(Leave No Trace: 흔적 남기지 않기) 원칙에 따라 머문 자리를 깨끗이 정리해 주시기 바랍니다. 본 가이드가 첫 대회 출전을 준비하는 데 실질적인 도움이 되기를 바랍니다. 73!</p>
+</footer>
+
+</main>
+<script src="assets/qa.js"></script>
+<script>
+/* ARDF 모스 식별음 (700Hz 정현파, 2회 반복) */
+(function () {
+  var M = {
+    MOE: '-- --- .', MOI: '-- --- ..', MOS: '-- --- ...',
+    MOH: '-- --- ....', MO5: '-- --- .....', MO: '-- ---'
+  };
+  var ctx = null, timer = null, cur = null;
+  function stop() {
+    if (timer) { clearTimeout(timer); timer = null; }
+    if (ctx) { ctx.close(); ctx = null; }
+    if (cur) { cur.classList.remove('playing'); cur.textContent = cur.dataset.label; cur = null; }
+  }
+  function play(btn) {
+    if (cur === btn) { stop(); return; }
+    stop();
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    var u = btn.dataset.fast === '1' ? 0.065 : 0.100;
+    var t = ctx.currentTime + 0.05;
+    for (var r = 0; r < 2; r++) {
+      M[btn.dataset.code].split(' ').forEach(function (ch) {
+        ch.split('').forEach(function (s, i) {
+          var len = (s === '-' ? 3 : 1) * u;
+          var o = ctx.createOscillator(), g = ctx.createGain();
+          o.type = 'sine'; o.frequency.value = 700;
+          g.gain.setValueAtTime(0, t);
+          g.gain.linearRampToValueAtTime(0.22, t + 0.005);
+          g.gain.setValueAtTime(0.22, t + len - 0.005);
+          g.gain.linearRampToValueAtTime(0, t + len);
+          o.connect(g); g.connect(ctx.destination);
+          o.start(t); o.stop(t + len + 0.01);
+          t += len + u;               /* 부호 사이 1단위 */
+        });
+        t += 2 * u;                   /* 글자 사이 3단위 */
+      });
+      t += 4 * u;                     /* 반복 사이 7단위 */
+    }
+    cur = btn; btn.classList.add('playing'); btn.textContent = '■ 정지';
+    timer = setTimeout(stop, (t - ctx.currentTime) * 1000 + 100);
+  }
+  document.querySelectorAll('.qa-player .qa-btn').forEach(function (b) {
+    b.dataset.label = b.textContent;
+    b.addEventListener('click', function () { play(b); });
+  });
+
+  /* 현장 사진 확대 (PC), 모바일은 새 창 */
+  var modal = document.getElementById('qaModal'), img = document.getElementById('qaModalImg');
+  function close() { modal.classList.remove('active'); }
+  document.querySelectorAll('.qa-photo').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (window.innerWidth <= 768) return;
+      e.preventDefault();
+      img.src = a.getAttribute('href'); img.alt = a.querySelector('img').alt;
+      modal.classList.add('active');
+    });
+  });
+  modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+  modal.querySelector('.qa-modal-close').addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+})();
+</script>
+</body>
+</html>
